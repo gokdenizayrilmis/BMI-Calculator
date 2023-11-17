@@ -26,7 +26,31 @@ public class Main {
         
         int height = scanner.nextInt();
         
-        double BMI = (weight /(height * height));             
+        double BMI = (weight /(height * height));
+        
+        if(BMI < 18.5){
+        
+            System.out.println("Your weight is below normal. You should gain weight.");
+        
+        }
+        
+        else if(18.5 <= BMI && BMI < 25){
+        
+            System.out.println("Congratulations! Your weight is normal.");
+            
+        }
+        
+        else if(25 <= BMI && BMI < 30){
+        
+            System.out.println("You weigh more than you should. You should lose weight.");
+            
+        }
+        
+        else{
+        
+            System.out.println("Warning! Your weight is much higher than it should be. You need to lose weight.");
+            
+        }
         
     }
 }
